@@ -27,7 +27,7 @@ namespace Lecture3
 			int cs = int.Parse(Console.ReadLine());
 
 			int total_marks = m + u + P + I + cs;
-			int mar = 500;
+			//int mar = 500;
 			float marks_obt = total_marks * 100 / 500;
 
 
@@ -38,7 +38,29 @@ namespace Lecture3
 			Console.WriteLine("Student Percentage is: " + marks_obt+"%");
 
 
-			
+			if (marks_obt>=80)
+			{
+				Console.WriteLine("Hurray Your Grade is: A-1");
+			}
+			 else if (marks_obt >= 70)
+			{
+				Console.WriteLine("Yup Your Grade is: A");
+			}
+
+			 else if (marks_obt >= 60)
+			{
+				Console.WriteLine("Yup Your Grade is: B");
+			}
+
+			 else if (marks_obt >= 50)
+			{
+				Console.WriteLine("Keep it up Your Grade is: C");
+			}
+
+			else
+			{
+				Console.WriteLine("Fail");
+			}
 
 
 			Console.ReadLine();
