@@ -92,41 +92,39 @@ namespace Lecture3
 			//Jump Statement 
 
 
-			Console.WriteLine("Continue Statement");
+			//Console.WriteLine("Continue Statement");
 
-			int d;
+			//int d;
 
-			for (d=1;d<=10;d++)
-			{
-				if (d==7)
-				{
-					continue;
-				}
+			//for (d=1;d<=10;d++)
+			//{
+			//	if (d==7)
+			//	{
+			//		continue;
+			//	}
 
-				Console.WriteLine(d);
+			//	Console.WriteLine(d);
 
-			}
-			Console.WriteLine("Loop Terminated");
+			//}
+			//Console.WriteLine("Loop Terminated");
 
-			Console.WriteLine("Break Statement");
+			//Console.WriteLine("Break Statement");
 
-			int e;
+			//int e;
 
-			for (e = 1; e <= 10; e++)
-			{
-				if (e== 7)
-				{
-					continue;
-				}
+			//for (e = 1; e <= 10; e++)
+			//{
+			//	if (e== 7)
+			//	{
+			//		continue;
+			//	}
 
-				Console.WriteLine(e);
+			//	Console.WriteLine(e);
 
-			}
-			Console.WriteLine("Loop Terminated");
+			//}
+			//Console.WriteLine("Loop Terminated");
 
-
-
-			Console.ReadLine();
+			//Console.ReadLine();
 
 
 
