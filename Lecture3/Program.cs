@@ -8,9 +8,44 @@ namespace Lecture3
 {
 	internal class Program
 	{
+
+		//public static void sum(int a,int b)
+		//{
+		//	int result = a + b;
+		//	Console.WriteLine("The Sum Result is: "+result);
+			
+		//}
+
+
+
+		public static void sub(int c,int d)
+		{
+			int result=c - d;
+			Console.WriteLine(result);
+		}
+
+		public static void add(int c, int d)
+		{
+			int result = c + d;
+			Console.WriteLine(result);
+			
+		}
+
+		public static void mul(int c, int d)
+		{
+			int result = c * d;
+			Console.WriteLine(result);
+
+		}
+
+		public static void div(int c, int d)
+		{
+			int result = c / d;
+			Console.WriteLine(result);
+
+		}
 		static void Main(string[] args)
 		{
-
 
 			/********************* Class 1 ***********************/
 
@@ -126,6 +161,76 @@ namespace Lecture3
 
 			//Console.ReadLine();
 
+			//int a;
+			//for (a = 1; a<=10; a++)
+			//{
+
+			//	Console.WriteLine(4+"*"+a+"="+4*a);
+			//}
+
+			//int b = 1;
+			//while (b < 10)
+			//{
+			//	Console.WriteLine(b);
+			//	b++;
+			//}
+
+			//String confirm;
+			//do
+			//{
+			//	Console.WriteLine("Enter Any num");
+			//	int c=int.Parse(Console.ReadLine());
+			//	Console.WriteLine("Enter Any num 2");
+			//	int d = int.Parse(Console.ReadLine());
+
+			//	int result = c + d;
+			//	Console.WriteLine("The Addition is: "+result);
+			//	Console.WriteLine("Do you want to CONTINUE Type\n Yes | No");
+			//	 confirm=Console.ReadLine();
+			//}
+
+			//while (confirm=="Yes");
+
+
+
+			//             Class 5             / /
+
+			
+
+			Console.WriteLine("Enter Any Num");
+			int num1=int.Parse(Console.ReadLine());
+			
+			Console.WriteLine("Enter Any Num 2");
+			int num2 = int.Parse(Console.ReadLine());
+
+			Console.WriteLine("Enter Any Opr");
+			string opr = Console.ReadLine();
+
+			if (opr.Equals("+"))
+			{
+				Program.add(num1, num2);
+
+			}
+			else if (opr.Equals("-"))
+			{
+				Program.sub(num1, num2);
+			}
+			else if (opr.Equals("*"))
+			{
+				Program.mul(num1, num2);
+			}
+			else if (opr.Equals("/"))
+			{
+				Program.div(num1, num2);
+			}
+			else
+			{
+				Console.WriteLine("The Opr io Not Matched");
+			}
+
+			
+
+			Console.ReadLine();
 
 
 		}
