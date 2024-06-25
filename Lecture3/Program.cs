@@ -228,8 +228,6 @@ namespace Lecture3
 				Console.WriteLine("The Opr io Not Matched");
 			}
 
-			
-
 			Console.ReadLine();
 
 
