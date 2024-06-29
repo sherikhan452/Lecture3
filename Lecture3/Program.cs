@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,44 +9,77 @@ namespace Lecture3
 {
 	internal class Program
 	{
-
-		//public static void sum(int a,int b)
+		//public static void sum(int a, int b)
 		//{
 		//	int result = a + b;
-		//	Console.WriteLine("The Sum Result is: "+result);
-			
+		//	Console.WriteLine("The Sum Result is: " + result);
+
+		//}
+
+		//public static void Cube(int a,int b,int c)
+		//{
+		//	int result = a * b * c;
+		//	Console.WriteLine(result);
+		//}
+
+
+		//public static void sub(int c,int d)
+		//{
+		//	int result=c - d;
+		//	Console.WriteLine(result);
+		//}
+
+		//public static void add(int c, int d)
+		//{
+		//	int result = c + d;
+		//	Console.WriteLine(result);
+
+		//}
+
+		//public static void mul(int c, int d)
+		//{
+		//	int result = c * d;
+		//	Console.WriteLine(result);
+
+		//}
+
+		//public static void div(int c, int d)
+		//{
+		//	int result = c / d;
+		//	Console.WriteLine(result);
+
 		//}
 
 
 
-		public static void sub(int c,int d)
-		{
-			int result=c - d;
-			Console.WriteLine(result);
-		}
+		public class Car1{
 
-		public static void add(int c, int d)
-		{
-			int result = c + d;
-			Console.WriteLine(result);
-			
-		}
+			int id;
+			String name;
 
-		public static void mul(int c, int d)
-		{
-			int result = c * d;
-			Console.WriteLine(result);
+			//Constructor
+			public Car1(int id, string name)
+			{
+				this.id = id;
+				this.name = name;
+			}
 
-		}
 
-		public static void div(int c, int d)
-		{
-			int result = c / d;
-			Console.WriteLine(result);
+			//Method
+			public void print_details()
+			{
+				Console.WriteLine("The User id is: "+this.id+"" +
+					"\nThe User name is:"+this.name);
+			}
+
+
 
 		}
+
+
 		static void Main(string[] args)
 		{
+
 
 			/********************* Class 1 ***********************/
 
@@ -57,6 +91,9 @@ namespace Lecture3
 			//int m = int.Parse(Console.ReadLine());
 			//Console.WriteLine("Enter Urdu Marks");
 			//int u = int.Parse(Console.ReadLine());
+
+
+
 			//Console.WriteLine("Enter Physics Marks");
 			//int P = int.Parse(Console.ReadLine());
 			//Console.WriteLine("Enter Islamiyat Marks");
@@ -120,9 +157,6 @@ namespace Lecture3
 			//	Console.WriteLine(b+ " * " +a+ " = "+b*a);
 
 			//}
-
-
-
 
 			//Jump Statement 
 
@@ -195,38 +229,107 @@ namespace Lecture3
 
 			//*************  Class 4  ***************/ /
 
-			
 
-			Console.WriteLine("Enter Any Num");
-			int num1=int.Parse(Console.ReadLine());
-			
-			Console.WriteLine("Enter Any Num 2");
-			int num2 = int.Parse(Console.ReadLine());
 
-			Console.WriteLine("Enter Any Opr");
-			string opr = Console.ReadLine();
+			//Console.WriteLine("Enter Any Num");
+			//int num1=int.Parse(Console.ReadLine());
 
-			if (opr.Equals("+"))
-			{
-				Program.add(num1, num2);
+			//Console.WriteLine("Enter Any Num 2");
+			//int num2 = int.Parse(Console.ReadLine());
 
-			}
-			else if (opr.Equals("-"))
-			{
-				Program.sub(num1, num2);
-			}
-			else if (opr.Equals("*"))
-			{
-				Program.mul(num1, num2);
-			}
-			else if (opr.Equals("/"))
-			{
-				Program.div(num1, num2);
-			}
-			else
-			{
-				Console.WriteLine("The Opr io Not Matched");
-			}
+			//Console.WriteLine("Enter Any Opr");
+			//string opr = Console.ReadLine();
+
+			//if (opr.Equals("+"))
+
+			//{
+			//	Program.add(num1, num2);
+
+			//}
+
+			//else if (opr.Equals("-"))
+
+			//{
+			//	Program.sub(num1, num2);
+			//}
+
+			//else if (opr.Equals("*"))
+
+			//{
+			//	Program.mul(num1, num2);
+			//}
+
+			//else if (opr.Equals("/"))
+
+			//{
+			//	Program.div(num1, num2);
+			//}
+
+			//else
+
+			//{
+			//	Console.WriteLine("The Opr io Not Matched");
+			//}
+
+
+
+
+
+			//Console.WriteLine("Enter Any Num1");
+			//int a = int.Parse(Console.ReadLine());
+			//Console.WriteLine("Enter Any Num2");
+			//int b = int.Parse(Console.ReadLine());
+			//Console.WriteLine("Enter Any Num3");
+			//int c = int.Parse(Console.ReadLine());
+			//Program.Cube(a,b,c);
+
+
+			//Console.WriteLine("Enter Any Num1");
+			//int a = int.Parse(Console.ReadLine());
+
+
+			//switch (a)
+			//{
+			//	case 12: 
+			//	Console.WriteLine("You're Child");
+			//		break;
+
+			//	case 18:
+			//		Console.WriteLine("You're Young");
+			//	break;
+
+			//	case 25:
+			//		Console.WriteLine("You're Adult");
+			//	break;
+
+			//	default:
+			//		Console.WriteLine("Number is Incorrect");
+			//	break;
+			//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			Car1 obj = new Car1(1,"Sk");
+			obj.print_details();
+
+			Car1 obj2 = new Car1(2, "Bk");
+			obj2.print_details();
+
+
+
+
+
 
 			Console.ReadLine();
 
